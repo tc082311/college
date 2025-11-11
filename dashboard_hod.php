@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'hod') {
     header("Location: login.php"); exit;
 }
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>HOD / Admin Dashboard</h2>
@@ -17,4 +17,5 @@ include 'includes/header.php';
         <li><a href="logout.php">Logout</a></li>
     </ul>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
