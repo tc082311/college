@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'faculty') {
     header("Location: login.php"); exit;
 }
 $faculty_id = $_SESSION['user_id'];
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Faculty Dashboard</h2>
@@ -17,4 +17,5 @@ include 'includes/header.php';
         <li><a href="logout.php">Logout</a></li>
     </ul>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
