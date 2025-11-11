@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
     }
 }
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Register</h2>
@@ -68,4 +68,5 @@ include 'includes/header.php';
     </form>
     <p>Already have an account? <a href="login.php">Login</a></p>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
