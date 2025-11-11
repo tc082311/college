@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else $err = "Please enter email and password.";
 }
 
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Login</h2>
@@ -41,4 +41,5 @@ include 'includes/header.php';
     </form>
     <p>No account? <a href="register.php">Register</a></p>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
