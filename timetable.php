@@ -20,7 +20,7 @@ if ($role == 'hod' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cre
     } else $msg = "Fill required fields.";
 }
 
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Timetable</h2>
@@ -70,4 +70,5 @@ include 'includes/header.php';
         <?php endwhile; ?>
     </table>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
