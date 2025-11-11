@@ -33,7 +33,7 @@ if ($role == 'faculty' && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST[
 }
 
 // Display logic
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Attendance</h2>
@@ -107,4 +107,5 @@ include 'includes/header.php';
         </table>
     <?php endif; ?>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
