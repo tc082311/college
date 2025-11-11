@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $users = $conn->query("SELECT user_id,name,email,role,department,created_at FROM users ORDER BY user_id DESC");
 $subjects = $conn->query("SELECT s.subject_id,s.subject_name,s.department,u.name AS faculty_name FROM subjects s LEFT JOIN users u ON s.faculty_id = u.user_id ORDER BY s.subject_id DESC");
 
-include 'includes/header.php';
+include 'header.php';
 ?>
 <div class="card">
     <h2>Admin / HOD Management</h2>
@@ -95,4 +95,5 @@ include 'includes/header.php';
         <?php endwhile; ?>
     </table>
 </div>
-<?php include 'includes/footer.php'; ?>
+<?php include 'footer.php'; ?>
+
